@@ -6,7 +6,7 @@ import { io } from "socket.io-client";
 import { Form, FormControl, Button } from "react-bootstrap";
 
 const ApiUrl = process.env.REACT_APP_API_URL;
-const socket = io("http://localhost:5000", { transports: ["websocket"] });
+const socket = io(ApiUrl, { transports: ["websocket"] });
 
 const ChatPannel = ({ chatId, senderId }) => {
   const [messagHistory, setMessageHistory] = useState(null);
