@@ -6,6 +6,7 @@ import TopPannel from "../components/TopPannel";
 import GetId from "../components/GetId";
 import Chats from "../components/Chats.jsx";
 import ChatPannel from "../components/ChatPannel.jsx";
+import UserSelector from "./UserSelector.jsx";
 
 const ApiUrl = process.env.REACT_APP_API_URL;
 
@@ -49,7 +50,7 @@ function Loggedin() {
           </Row>
         </Container>
       )}
-      {!senderId && <GetId setSenderId={setSenderId} />}
+      {!senderId && <UserSelector setSenderId={setSenderId} />}
     </>
   );
 }
