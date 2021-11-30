@@ -63,4 +63,13 @@
   display: flex;
   justify-content: center;
   margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.user-select-button {
+  margin-top: 30px;
+  width: 100%;
+}
+.user-selector {
+  padding-right: 200px;
 }
